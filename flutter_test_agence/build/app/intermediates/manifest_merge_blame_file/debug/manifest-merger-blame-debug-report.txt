@@ -1,0 +1,207 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_test_agence"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/android/app/src/debug/AndroidManifest.xml:7:22-64
+16
+17    <queries>
+17-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:17:5-19:15
+18        <package android:name="com.facebook.katana" />
+18-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:18:9-55
+18-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:18:18-52
+19    </queries>
+20
+21    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+21-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:16:5-79
+21-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:16:22-76
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.flutter_test_agence.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.flutter_test_agence.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+28-->[com.android.installreferrer:installreferrer:1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/699b16a5ed35016f28189c1d48ef50b0/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+28-->[com.android.installreferrer:installreferrer:1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/699b16a5ed35016f28189c1d48ef50b0/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+29
+30    <application
+31        android:name="android.app.Application"
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.9.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6710ee2e3546b398da00e75003abfc33/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/ic_launcher"
+35        android:label="flutter_test_agence"
+36        android:supportsRtl="true" >
+36-->[com.facebook.android:facebook-android-sdk:5.15.3] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/0a4773826c4b5d8fbc32b4e756844edf/transformed/jetified-facebook-android-sdk-5.15.3/AndroidManifest.xml:28:18-44
+37        <activity
+38            android:name="com.example.flutter_test_agence.MainActivity"
+39            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+40            android:exported="true"
+41            android:hardwareAccelerated="true"
+42            android:launchMode="singleTop"
+43            android:theme="@style/LaunchTheme"
+44            android:windowSoftInputMode="adjustResize" >
+45
+46            <!--
+47                 Specifies an Android theme to apply to this Activity as soon as
+48                 the Android process has started. This theme is visible to the user
+49                 while the Flutter UI initializes. After that, this theme continues
+50                 to determine the Window background behind the Flutter UI.
+51            -->
+52            <meta-data
+53                android:name="io.flutter.embedding.android.NormalTheme"
+54                android:resource="@style/NormalTheme" />
+55
+56            <intent-filter>
+57                <action android:name="android.intent.action.MAIN" />
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+60            </intent-filter>
+61        </activity>
+62        <!--
+63             Don't delete the meta-data below.
+64             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+65        -->
+66        <meta-data
+67            android:name="flutterEmbedding"
+68            android:value="2" />
+69        <meta-data
+70            android:name="com.facebook.sdk.ApplicationId"
+71            android:value="@string/facebook_app_id" />
+72        <meta-data
+73            android:name="com.facebook.sdk.ClientToken"
+74            android:value="@string/facebook_client_token" />
+75
+76        <provider
+76-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+77            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+77-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+78            android:authorities="com.example.flutter_test_agence.flutter.image_provider"
+78-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+79            android:exported="false"
+79-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+80            android:grantUriPermissions="true" >
+80-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+81            <meta-data
+81-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+83                android:resource="@xml/flutter_image_picker_file_paths" />
+83-->[:image_picker_android] /home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+84        </provider>
+85
+86        <activity
+86-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:22:9-25:66
+87            android:name="com.facebook.FacebookActivity"
+87-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:23:13-57
+88            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+88-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:24:13-96
+89            android:theme="@style/com_facebook_activity_theme" />
+89-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:25:13-63
+90        <activity android:name="com.facebook.CustomTabMainActivity" />
+90-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:26:9-71
+90-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:26:19-68
+91        <activity
+91-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:27:9-41:20
+92            android:name="com.facebook.CustomTabActivity"
+92-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:28:13-58
+93            android:exported="true" >
+93-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:29:13-36
+94            <intent-filter>
+94-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:31:13-40:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:32:17-69
+95-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:32:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:34:17-76
+97-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:34:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:35:17-78
+98-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:35:27-75
+99
+100                <data
+100-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:37:17-39:50
+101                    android:host="cct.com.example.flutter_test_agence"
+101-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:38:21-56
+102                    android:scheme="fbconnect" />
+102-->[com.facebook.android:facebook-common:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/473220e86c5fe42e608bf52e45c3b8ea/transformed/jetified-facebook-common-15.1.0/AndroidManifest.xml:39:21-47
+103            </intent-filter>
+104        </activity>
+105        <!--
+106         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+107         with the application context. This config is merged in with the host app's manifest,
+108         but there can only be one provider with the same authority activated at any given
+109         point; so if the end user has two or more different apps that use Facebook SDK, only the
+110         first one will be able to use the provider. To work around this problem, we use the
+111         following placeholder in the authority to identify each host application as if it was
+112         a completely different provider.
+113        -->
+114        <provider
+114-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:29:9-32:40
+115            android:name="com.facebook.internal.FacebookInitProvider"
+115-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:30:13-70
+116            android:authorities="com.example.flutter_test_agence.FacebookInitProvider"
+116-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:31:13-72
+117            android:exported="false" />
+117-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:32:13-37
+118
+119        <receiver
+119-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:34:9-40:20
+120            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+120-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:35:13-86
+121            android:exported="false" >
+121-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:36:13-37
+122            <intent-filter>
+122-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:37:13-39:29
+123                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+123-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:38:17-95
+123-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:38:25-92
+124            </intent-filter>
+125        </receiver>
+126        <receiver
+126-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:41:9-47:20
+127            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+127-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:42:13-118
+128            android:exported="false" >
+128-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:43:13-37
+129            <intent-filter>
+129-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:44:13-46:29
+130                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+130-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:45:17-103
+130-->[com.facebook.android:facebook-core:15.1.0] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/6ce9e60a44a933a641db26e23d42f3cd/transformed/jetified-facebook-core-15.1.0/AndroidManifest.xml:45:25-100
+131            </intent-filter>
+132        </receiver>
+133
+134        <uses-library
+134-->[androidx.window:window:1.0.0-beta04] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+135            android:name="androidx.window.extensions"
+135-->[androidx.window:window:1.0.0-beta04] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+136            android:required="false" />
+136-->[androidx.window:window:1.0.0-beta04] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+137        <uses-library
+137-->[androidx.window:window:1.0.0-beta04] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+138            android:name="androidx.window.sidecar"
+138-->[androidx.window:window:1.0.0-beta04] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+139            android:required="false" />
+139-->[androidx.window:window:1.0.0-beta04] /home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+140    </application>
+141
+142</manifest>
