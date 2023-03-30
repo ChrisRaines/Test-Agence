@@ -11,7 +11,7 @@ class LoadFullPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         systemOverlayStyle: const SystemUiOverlayStyle(
-          statusBarColor: Colors.red,
+          statusBarColor: Color.fromARGB(255, 0, 57, 104),
           statusBarIconBrightness: Brightness.dark,
         ),
         automaticallyImplyLeading: false,

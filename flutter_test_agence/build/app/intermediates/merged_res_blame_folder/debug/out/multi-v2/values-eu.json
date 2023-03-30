@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml",
+            "outputFile": "/home/christian.almeida@VALEMOBI.CORP/Documentos/Flutter-Projects/Test-Agence/flutter_test_agence/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "/home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/5cd960781a6a1948b7b0e7aa56175b49/transformed/appcompat-1.1.0/res/values-eu/values-eu.xml",

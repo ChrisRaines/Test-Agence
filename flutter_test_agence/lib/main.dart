@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_test_agence/modules/account/cubit/account_cubit.dart';
 import 'package:flutter_test_agence/modules/home/cubit/home_cubit.dart';
 import 'package:flutter_test_agence/shared/utils/routes.dart';
 
 void main() {
   runApp(MultiBlocProvider(providers: [
+    BlocProvider(
+      create: (context) => AccountCubit(),
+    ),
     BlocProvider(
       create: (context) => HomeCubit(),
     )

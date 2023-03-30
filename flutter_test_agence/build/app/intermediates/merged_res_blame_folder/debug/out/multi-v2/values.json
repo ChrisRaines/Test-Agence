@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/christian.almeida@VALEMOBI.CORP/Documentos/Flutter-Projects/Test-Agence/flutter_test_agence/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/5cd960781a6a1948b7b0e7aa56175b49/transformed/appcompat-1.1.0/res/values/values.xml",
@@ -39,42 +39,6 @@
                         "endLines": "7,26,27,85,86,207,208,209,210,211,212,213,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,292,293,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,324,379,1806,1810,1812,1818,1820,1964,1965,2755,2793,2971,2992,3034,3040",
                         "endColumns": "59,71,87,68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,57,60,62,56,50,49,60,56,65,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24,24",
                         "endOffsets": "467,1540,1628,5630,5693,14048,14116,14188,14258,14319,14393,14466,15311,15372,15434,15498,15560,15621,15689,15789,15849,15915,15988,16057,16114,16166,16228,16965,17041,17106,17165,17224,17284,17344,17404,17464,17524,17584,17644,17704,17764,17824,17883,17943,18003,18063,18123,18183,18243,18303,18363,18423,18483,18542,18602,18662,18721,18780,18839,18898,18957,19016,19407,19442,19704,19767,19822,19880,19938,19999,20062,20119,20170,20220,20281,20338,20404,20438,20473,20508,21124,25610,120212,120413,120589,120973,121168,132550,132617,175561,177685,187778,188459,189460,189627"
-                    }
-                },
-                {
-                    "source": "/home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "1469,1532",
-                        "startColumns": "4,4",
-                        "startOffsets": "95770,98604",
-                        "endLines": "1473,1534",
-                        "endColumns": "12,12",
-                        "endOffsets": "96073,98768"
-                    }
-                },
-                {
-                    "source": "/home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,116",
-                        "endColumns": "60,82",
-                        "endOffsets": "111,194"
-                    },
-                    "to": {
-                        "startLines": "375,376",
-                        "startColumns": "4,4",
-                        "startOffsets": "25287,25348",
-                        "endColumns": "60,82",
-                        "endOffsets": "25343,25426"
                     }
                 },
                 {
@@ -298,6 +262,23 @@
                     }
                 },
                 {
+                    "source": "/home/christian.almeida@VALEMOBI.CORP/Documentos/Flutter-Projects/Test-Agence/flutter_test_agence/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,116",
+                        "endColumns": "60,82",
+                        "endOffsets": "111,194"
+                    },
+                    "to": {
+                        "startLines": "375,376",
+                        "startColumns": "4,4",
+                        "startOffsets": "25287,25348",
+                        "endColumns": "60,82",
+                        "endOffsets": "25343,25426"
+                    }
+                },
+                {
                     "source": "/home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/54c2c5e9d4878f1c71319deedb5b4639/transformed/jetified-savedstate-1.2.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -312,6 +293,25 @@
                         "startOffsets": "20648",
                         "endColumns": "53",
                         "endOffsets": "20697"
+                    }
+                },
+                {
+                    "source": "/home/christian.almeida@VALEMOBI.CORP/Documentos/Flutter-Projects/Test-Agence/flutter_test_agence/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "1469,1532",
+                        "startColumns": "4,4",
+                        "startOffsets": "95770,98604",
+                        "endLines": "1473,1534",
+                        "endColumns": "12,12",
+                        "endOffsets": "96073,98768"
                     }
                 },
                 {

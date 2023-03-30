@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/christian.almeida@VALEMOBI.CORP/Documentos/TestAgence/flutter_test_agence/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
+            "outputFile": "/home/christian.almeida@VALEMOBI.CORP/Documentos/Flutter-Projects/Test-Agence/flutter_test_agence/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/home/christian.almeida@VALEMOBI.CORP/.gradle/caches/transforms-3/a09a85845e30cfa3ded8fca894e37d12/transformed/jetified-facebook-login-15.1.0/res/values-hr/values-hr.xml",
