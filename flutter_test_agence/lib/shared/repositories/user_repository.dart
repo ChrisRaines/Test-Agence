@@ -25,4 +25,9 @@ class UserRepository {
     sharedPreferences.setString(userEmail, user.email ?? "");
     sharedPreferences.setString(userImage, user.imageUrl ?? "");
   }
+
+  void logoff() async {
+    sharedPreferences = await SharedPreferences.getInstance();
+    sharedPreferences.clear();
+  }
 }

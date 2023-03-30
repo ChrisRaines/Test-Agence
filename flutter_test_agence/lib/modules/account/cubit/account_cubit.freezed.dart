@@ -21,6 +21,7 @@ mixin _$AccountState {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function() success,
+    required TResult Function() successLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +29,7 @@ mixin _$AccountState {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function()? success,
+    TResult? Function()? successLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +37,7 @@ mixin _$AccountState {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function()? success,
+    TResult Function()? successLogin,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +46,7 @@ mixin _$AccountState {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_SuccessLogin value) successLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +54,7 @@ mixin _$AccountState {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_SuccessLogin value)? successLogin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +62,7 @@ mixin _$AccountState {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_SuccessLogin value)? successLogin,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -120,6 +126,7 @@ class _$_Initial implements _Initial {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function() success,
+    required TResult Function() successLogin,
   }) {
     return initial();
   }
@@ -130,6 +137,7 @@ class _$_Initial implements _Initial {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function()? success,
+    TResult? Function()? successLogin,
   }) {
     return initial?.call();
   }
@@ -140,6 +148,7 @@ class _$_Initial implements _Initial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function()? success,
+    TResult Function()? successLogin,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -154,6 +163,7 @@ class _$_Initial implements _Initial {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_SuccessLogin value) successLogin,
   }) {
     return initial(this);
   }
@@ -164,6 +174,7 @@ class _$_Initial implements _Initial {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_SuccessLogin value)? successLogin,
   }) {
     return initial?.call(this);
   }
@@ -174,6 +185,7 @@ class _$_Initial implements _Initial {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_SuccessLogin value)? successLogin,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -227,6 +239,7 @@ class _$_Loading implements _Loading {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function() success,
+    required TResult Function() successLogin,
   }) {
     return loading();
   }
@@ -237,6 +250,7 @@ class _$_Loading implements _Loading {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function()? success,
+    TResult? Function()? successLogin,
   }) {
     return loading?.call();
   }
@@ -247,6 +261,7 @@ class _$_Loading implements _Loading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function()? success,
+    TResult Function()? successLogin,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -261,6 +276,7 @@ class _$_Loading implements _Loading {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_SuccessLogin value) successLogin,
   }) {
     return loading(this);
   }
@@ -271,6 +287,7 @@ class _$_Loading implements _Loading {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_SuccessLogin value)? successLogin,
   }) {
     return loading?.call(this);
   }
@@ -281,6 +298,7 @@ class _$_Loading implements _Loading {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_SuccessLogin value)? successLogin,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -334,6 +352,7 @@ class _$_Success implements _Success {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function() success,
+    required TResult Function() successLogin,
   }) {
     return success();
   }
@@ -344,6 +363,7 @@ class _$_Success implements _Success {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function()? success,
+    TResult? Function()? successLogin,
   }) {
     return success?.call();
   }
@@ -354,6 +374,7 @@ class _$_Success implements _Success {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function()? success,
+    TResult Function()? successLogin,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -368,6 +389,7 @@ class _$_Success implements _Success {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_SuccessLogin value) successLogin,
   }) {
     return success(this);
   }
@@ -378,6 +400,7 @@ class _$_Success implements _Success {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_SuccessLogin value)? successLogin,
   }) {
     return success?.call(this);
   }
@@ -388,6 +411,7 @@ class _$_Success implements _Success {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_SuccessLogin value)? successLogin,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -399,4 +423,118 @@ class _$_Success implements _Success {
 
 abstract class _Success implements AccountState {
   const factory _Success() = _$_Success;
+}
+
+/// @nodoc
+abstract class _$$_SuccessLoginCopyWith<$Res> {
+  factory _$$_SuccessLoginCopyWith(
+          _$_SuccessLogin value, $Res Function(_$_SuccessLogin) then) =
+      __$$_SuccessLoginCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_SuccessLoginCopyWithImpl<$Res>
+    extends _$AccountStateCopyWithImpl<$Res, _$_SuccessLogin>
+    implements _$$_SuccessLoginCopyWith<$Res> {
+  __$$_SuccessLoginCopyWithImpl(
+      _$_SuccessLogin _value, $Res Function(_$_SuccessLogin) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_SuccessLogin implements _SuccessLogin {
+  const _$_SuccessLogin();
+
+  @override
+  String toString() {
+    return 'AccountState.successLogin()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_SuccessLogin);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function() success,
+    required TResult Function() successLogin,
+  }) {
+    return successLogin();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? success,
+    TResult? Function()? successLogin,
+  }) {
+    return successLogin?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function()? success,
+    TResult Function()? successLogin,
+    required TResult orElse(),
+  }) {
+    if (successLogin != null) {
+      return successLogin();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Success value) success,
+    required TResult Function(_SuccessLogin value) successLogin,
+  }) {
+    return successLogin(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Success value)? success,
+    TResult? Function(_SuccessLogin value)? successLogin,
+  }) {
+    return successLogin?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Success value)? success,
+    TResult Function(_SuccessLogin value)? successLogin,
+    required TResult orElse(),
+  }) {
+    if (successLogin != null) {
+      return successLogin(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SuccessLogin implements AccountState {
+  const factory _SuccessLogin() = _$_SuccessLogin;
 }

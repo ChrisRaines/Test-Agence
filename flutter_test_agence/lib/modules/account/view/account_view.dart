@@ -3,7 +3,7 @@ import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 import 'package:flutter_test_agence/modules/account/cubit/account_cubit.dart';
 import 'package:flutter_test_agence/modules/account/widgets/social_login_widget.dart';
 import 'package:flutter_test_agence/shared/repositories/user_repository.dart';
-import 'package:flutter_test_agence/shared/utils/routes.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
 class AccountView extends StatefulWidget {
@@ -15,9 +15,26 @@ class AccountView extends StatefulWidget {
 
 class _AccountViewState extends State<AccountView> {
   UserRepository userRepository = UserRepository();
+  final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
+
+  GoogleSignInAccount? _currentUser;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _googleSignIn.onCurrentUserChanged.listen((event) {
+      setState(() {
+        _currentUser = event;
+      });
+    });
+
+    _googleSignIn.signInSilently();
+  }
 
   @override
   Widget build(BuildContext context) {
+    //  GoogleSignInAccount? user = _currentUser;
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -84,35 +101,46 @@ class _AccountViewState extends State<AccountView> {
               ),
             ]),
             const SizedBox(height: 8),
-            SocialLoginComponent(facebook: () async {
-              final fb = FacebookLogin();
+            SocialLoginComponent(
+              facebook: () async {
+                final fb = FacebookLogin();
 
-              final res = await fb.logIn(permissions: [
-                FacebookPermission.publicProfile,
-                FacebookPermission.email,
-              ]);
+                final res = await fb.logIn(permissions: [
+                  FacebookPermission.publicProfile,
+                  FacebookPermission.email,
+                ]);
 
-              switch (res.status) {
-                case FacebookLoginStatus.success:
-                  // final FacebookAccessToken? accessToken = res.accessToken;
-                  final profile = await fb.getUserProfile();
-                  final imageUrl = await fb.getProfileImageUrl(width: 100);
-                  final email = await fb.getUserEmail();
+                switch (res.status) {
+                  case FacebookLoginStatus.success:
+                    // final FacebookAccessToken? accessToken = res.accessToken;
+                    final profile = await fb.getUserProfile();
+                    final imageUrl = await fb.getProfileImageUrl(width: 100);
+                    final email = await fb.getUserEmail();
 
-                  Provider.of<AccountCubit>(context, listen: false)
-                      .login(profile!.name!, email!, imageUrl!);
+                    Provider.of<AccountCubit>(context, listen: false)
+                        .login(profile!.name!, email!, imageUrl!);
 
-                  // ignore: use_build_context_synchronously
-                  Navigator.pushNamed(context, Routes.home);
-
-                  break;
-                case FacebookLoginStatus.cancel:
-                  break;
-                case FacebookLoginStatus.error:
-                  print('Error while log in: ${res.error}');
-                  break;
-              }
-            }),
+                    break;
+                  case FacebookLoginStatus.cancel:
+                    break;
+                  case FacebookLoginStatus.error:
+                    print('Error while log in: ${res.error}');
+                    break;
+                }
+              },
+              google: () async {
+                try {
+                  await _googleSignIn.signIn();
+                  Provider.of<AccountCubit>(context, listen: false).login(
+                    _currentUser?.displayName ?? "",
+                    _currentUser?.email ?? "",
+                    _currentUser?.photoUrl ?? "",
+                  );
+                } catch (e) {
+                  print("Error signing in $e");
+                }
+              },
+            ),
           ],
         ),
       ),

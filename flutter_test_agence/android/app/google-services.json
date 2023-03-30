@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "269839823421",
+    "project_id": "teste-agence-73a2b",
+    "storage_bucket": "teste-agence-73a2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269839823421:android:9d9b2dd77b28718e2ab054",
+        "android_client_info": {
+          "package_name": "com.example.flutter_test_agence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269839823421-eir7bv9j97h54ih1bo1nnqb4q6b1doi4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-c5OfXjMJG6H-2x0_78_YUakjJd_a4r8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269839823421-eir7bv9j97h54ih1bo1nnqb4q6b1doi4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
