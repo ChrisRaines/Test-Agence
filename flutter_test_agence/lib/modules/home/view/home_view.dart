@@ -60,7 +60,7 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       endDrawer: _drawer(),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 0, 57, 104),
+        backgroundColor: const Color.fromARGB(255, 104, 90, 86),
         title: const Text("Produtos"),
         automaticallyImplyLeading: false,
         centerTitle: true,

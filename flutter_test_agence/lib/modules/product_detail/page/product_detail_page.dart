@@ -42,7 +42,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           Icon(Icons.shopping_cart_checkout_sharp),
           SizedBox(width: 16)
         ],
-        backgroundColor: const Color.fromARGB(255, 0, 57, 104),
+        backgroundColor: const Color.fromARGB(255, 104, 90, 86),
         title: const Text("Echo Dot (4ª Geração)"),
         centerTitle: true,
         leading: GestureDetector(

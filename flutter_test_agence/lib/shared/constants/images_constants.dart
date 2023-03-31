@@ -7,4 +7,5 @@ class ImagesConstants {
   static const String stars = "assets/images/stars.png";
   static const String productMoreDetails =
       "assets/images/product-more-details.png";
+  static const String logo = "assets/images/logo_agence.png";
 }
