@@ -192,30 +192,26 @@ class _HomeViewState extends State<HomeView> {
   }
 
   Widget _productWidget(String name, String price, bool inStock) {
-    return Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: Card(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(ImagesConstants.produto, scale: 8),
-            const SizedBox(height: 8.0),
-            const Text("Echo Dot (4ª Geração)"),
-            const SizedBox(height: 8.0),
-            const Text(
-              "R\$379,05",
-              style: TextStyle(fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(height: 8.0),
-            const Text(
-              "Em estoque",
-              style:
-                  TextStyle(color: Colors.green, fontWeight: FontWeight.w500),
-            )
-          ],
-        ),
-        // child: Text("1"),
+    return Card(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(ImagesConstants.produto, scale: 8),
+          const SizedBox(height: 8.0),
+          const Text("Echo Dot (4ª Geração)"),
+          const SizedBox(height: 8.0),
+          const Text(
+            "R\$379,05",
+            style: TextStyle(fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: 8.0),
+          const Text(
+            "Em estoque",
+            style: TextStyle(color: Colors.green, fontWeight: FontWeight.w500),
+          )
+        ],
       ),
+      // child: Text("1"),
     );
   }
 }
