@@ -25,7 +25,7 @@ class _HomeViewState extends State<HomeView> {
       endDrawer: _drawer(),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 0, 57, 104),
-        title: const Text("Test Agence"),
+        title: const Text("Produtos"),
         automaticallyImplyLeading: false,
         centerTitle: true,
         elevation: 5,
@@ -87,7 +87,7 @@ class _HomeViewState extends State<HomeView> {
             _itemMenu(
               "Meus produtos",
               const Icon(
-                Icons.folder,
+                Icons.shopping_bag_rounded,
                 size: 29,
               ),
               () {},
@@ -163,15 +163,10 @@ class _HomeViewState extends State<HomeView> {
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 8.0),
-            Row(
-              children: const [
-                SizedBox(width: 20),
-                Text(
-                  "Em estoque",
-                  style: TextStyle(
-                      color: Colors.green, fontWeight: FontWeight.w500),
-                ),
-              ],
+            const Text(
+              "Em estoque",
+              style:
+                  TextStyle(color: Colors.green, fontWeight: FontWeight.w500),
             )
           ],
         ),
