@@ -1,4 +1,6 @@
 .dart_tool/
+build/
+
 
 .packages
 .pub/
@@ -34,7 +36,6 @@ xcuserdata
 Icon?
 .tags*
 
-build/
 .android/
 .ios/
 .flutter-plugins
