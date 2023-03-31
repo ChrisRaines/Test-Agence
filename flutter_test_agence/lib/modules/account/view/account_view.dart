@@ -3,6 +3,7 @@ import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 import 'package:flutter_test_agence/modules/account/cubit/account_cubit.dart';
 import 'package:flutter_test_agence/modules/account/widgets/social_login_widget.dart';
 import 'package:flutter_test_agence/shared/repositories/user_repository.dart';
+import 'package:flutter_test_agence/shared/utils/routes.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
@@ -74,19 +75,22 @@ class _AccountViewState extends State<AccountView> {
               style: TextStyle(decoration: TextDecoration.underline),
             ),
             const SizedBox(height: 24),
-            Container(
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 0, 57, 104),
-                  borderRadius: BorderRadius.circular(5)),
-              width: 120,
-              height: 40,
-              child: const Text(
-                "Entrar",
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
+            GestureDetector(
+              onTap: () => Navigator.pushNamed(context, Routes.home),
+              child: Container(
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 0, 57, 104),
+                    borderRadius: BorderRadius.circular(5)),
+                width: 120,
+                height: 40,
+                child: const Text(
+                  "Entrar",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ),

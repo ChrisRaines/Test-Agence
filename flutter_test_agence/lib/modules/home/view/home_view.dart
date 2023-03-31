@@ -37,7 +37,10 @@ class _HomeViewState extends State<HomeView> {
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
           ),
-          itemBuilder: (context, index) => _productWidget(),
+          itemBuilder: (context, index) => GestureDetector(
+            onTap: () => Navigator.pushNamed(context, Routes.product),
+            child: _productWidget(),
+          ),
         ),
       ),
     );
@@ -50,10 +53,17 @@ class _HomeViewState extends State<HomeView> {
         child: Column(
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(50),
+              borderRadius: BorderRadius.circular(100),
               child: widget.user.imageUrl != null && widget.user.imageUrl != ""
-                  ? Image.network(widget.user.imageUrl!)
-                  : Image.asset(ImagesConstants.userDefault),
+                  ? Image.network(
+                      widget.user.imageUrl!,
+                      scale: 0.60,
+                    )
+                  : Image.asset(
+                      ImagesConstants.userDefault,
+                      height: 200,
+                      width: 200,
+                    ),
             ),
             const SizedBox(height: 20),
             Text(
@@ -142,6 +152,7 @@ class _HomeViewState extends State<HomeView> {
       padding: const EdgeInsets.all(10.0),
       child: Card(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(ImagesConstants.produto, scale: 8),
             const SizedBox(height: 8.0),
