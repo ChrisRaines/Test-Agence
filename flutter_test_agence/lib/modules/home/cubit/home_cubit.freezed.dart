@@ -19,7 +19,9 @@ mixin _$HomeState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(UserModel user) success,
+    required TResult Function(
+            UserModel user, List<ProductModel> productListMock)
+        success,
     required TResult Function() loading,
     required TResult Function() error,
   }) =>
@@ -27,7 +29,8 @@ mixin _$HomeState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(UserModel user)? success,
+    TResult? Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult? Function()? loading,
     TResult? Function()? error,
   }) =>
@@ -35,7 +38,8 @@ mixin _$HomeState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(UserModel user)? success,
+    TResult Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult Function()? loading,
     TResult Function()? error,
     required TResult orElse(),
@@ -123,7 +127,9 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(UserModel user) success,
+    required TResult Function(
+            UserModel user, List<ProductModel> productListMock)
+        success,
     required TResult Function() loading,
     required TResult Function() error,
   }) {
@@ -134,7 +140,8 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(UserModel user)? success,
+    TResult? Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult? Function()? loading,
     TResult? Function()? error,
   }) {
@@ -145,7 +152,8 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(UserModel user)? success,
+    TResult Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult Function()? loading,
     TResult Function()? error,
     required TResult orElse(),
@@ -204,7 +212,7 @@ abstract class _$$_SuccessCopyWith<$Res> {
           _$_Success value, $Res Function(_$_Success) then) =
       __$$_SuccessCopyWithImpl<$Res>;
   @useResult
-  $Res call({UserModel user});
+  $Res call({UserModel user, List<ProductModel> productListMock});
 
   $UserModelCopyWith<$Res> get user;
 }
@@ -220,12 +228,17 @@ class __$$_SuccessCopyWithImpl<$Res>
   @override
   $Res call({
     Object? user = null,
+    Object? productListMock = null,
   }) {
     return _then(_$_Success(
       null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as UserModel,
+      null == productListMock
+          ? _value._productListMock
+          : productListMock // ignore: cast_nullable_to_non_nullable
+              as List<ProductModel>,
     ));
   }
 
@@ -241,14 +254,22 @@ class __$$_SuccessCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_Success implements _Success {
-  const _$_Success(this.user);
+  const _$_Success(this.user, final List<ProductModel> productListMock)
+      : _productListMock = productListMock;
 
   @override
   final UserModel user;
+  final List<ProductModel> _productListMock;
+  @override
+  List<ProductModel> get productListMock {
+    if (_productListMock is EqualUnmodifiableListView) return _productListMock;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_productListMock);
+  }
 
   @override
   String toString() {
-    return 'HomeState.success(user: $user)';
+    return 'HomeState.success(user: $user, productListMock: $productListMock)';
   }
 
   @override
@@ -256,11 +277,14 @@ class _$_Success implements _Success {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Success &&
-            (identical(other.user, user) || other.user == user));
+            (identical(other.user, user) || other.user == user) &&
+            const DeepCollectionEquality()
+                .equals(other._productListMock, _productListMock));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, user);
+  int get hashCode => Object.hash(
+      runtimeType, user, const DeepCollectionEquality().hash(_productListMock));
 
   @JsonKey(ignore: true)
   @override
@@ -272,35 +296,39 @@ class _$_Success implements _Success {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(UserModel user) success,
+    required TResult Function(
+            UserModel user, List<ProductModel> productListMock)
+        success,
     required TResult Function() loading,
     required TResult Function() error,
   }) {
-    return success(user);
+    return success(user, productListMock);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(UserModel user)? success,
+    TResult? Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult? Function()? loading,
     TResult? Function()? error,
   }) {
-    return success?.call(user);
+    return success?.call(user, productListMock);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(UserModel user)? success,
+    TResult Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult Function()? loading,
     TResult Function()? error,
     required TResult orElse(),
   }) {
     if (success != null) {
-      return success(user);
+      return success(user, productListMock);
     }
     return orElse();
   }
@@ -344,9 +372,12 @@ class _$_Success implements _Success {
 }
 
 abstract class _Success implements HomeState {
-  const factory _Success(final UserModel user) = _$_Success;
+  const factory _Success(
+          final UserModel user, final List<ProductModel> productListMock) =
+      _$_Success;
 
   UserModel get user;
+  List<ProductModel> get productListMock;
   @JsonKey(ignore: true)
   _$$_SuccessCopyWith<_$_Success> get copyWith =>
       throw _privateConstructorUsedError;
@@ -390,7 +421,9 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(UserModel user) success,
+    required TResult Function(
+            UserModel user, List<ProductModel> productListMock)
+        success,
     required TResult Function() loading,
     required TResult Function() error,
   }) {
@@ -401,7 +434,8 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(UserModel user)? success,
+    TResult? Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult? Function()? loading,
     TResult? Function()? error,
   }) {
@@ -412,7 +446,8 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(UserModel user)? success,
+    TResult Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult Function()? loading,
     TResult Function()? error,
     required TResult orElse(),
@@ -502,7 +537,9 @@ class _$_Error implements _Error {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(UserModel user) success,
+    required TResult Function(
+            UserModel user, List<ProductModel> productListMock)
+        success,
     required TResult Function() loading,
     required TResult Function() error,
   }) {
@@ -513,7 +550,8 @@ class _$_Error implements _Error {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(UserModel user)? success,
+    TResult? Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult? Function()? loading,
     TResult? Function()? error,
   }) {
@@ -524,7 +562,8 @@ class _$_Error implements _Error {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(UserModel user)? success,
+    TResult Function(UserModel user, List<ProductModel> productListMock)?
+        success,
     TResult Function()? loading,
     TResult Function()? error,
     required TResult orElse(),

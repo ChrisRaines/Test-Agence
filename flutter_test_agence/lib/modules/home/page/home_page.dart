@@ -26,7 +26,8 @@ class _HomePageState extends State<HomePage> {
         return state.maybeWhen(
           initial: () => const LoadFullPage(),
           loading: () => const LoadFullPage(),
-          success: (user) => HomeView(user: user),
+          success: (user, productListMock) =>
+              HomeView(user: user, productListMock: productListMock),
           error: () => const LoadFullPage(),
           orElse: () => const LoadFullPage(),
         );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_agence/shared/constants/images_constants.dart';
+import 'package:flutter_test_agence/shared/models/product_model/product_model.dart';
 import 'package:flutter_test_agence/shared/models/user_model.dart';
 import 'package:flutter_test_agence/shared/repositories/user_repository.dart';
 import 'package:flutter_test_agence/shared/utils/routes.dart';
@@ -8,9 +9,11 @@ class HomeView extends StatefulWidget {
   const HomeView({
     super.key,
     required this.user,
+    required this.productListMock,
   });
 
   final UserModel user;
+  final List<ProductModel> productListMock;
 
   @override
   State<HomeView> createState() => _HomeViewState();
@@ -18,6 +21,39 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView> {
   UserRepository userRepository = UserRepository();
+  final ScrollController _scrollController = ScrollController();
+  List<ProductModel> listProducts = [];
+
+  @override
+  void initState() {
+    super.initState();
+    // recebendo a lista de produtos mockada e a tornando modificavel
+    listProducts = List.from(widget.productListMock);
+    _scrollController.addListener(() {
+      if (_scrollController.position.pixels ==
+          _scrollController.position.maxScrollExtent) {
+        _getMoreData();
+      }
+    });
+  }
+
+  // para adicionar mais produtos na lista de produtos quando executar o scroll
+  // como se fosse uma paginação
+  _getMoreData() {
+    ProductModel product = ProductModel(
+      "Echo Dot (4ª Geração)",
+      "R\$379,05",
+      true,
+    );
+
+    for (int i = widget.productListMock.length;
+        i < widget.productListMock.length + 10;
+        i++) {
+      listProducts.add(product);
+    }
+
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,14 +69,22 @@ class _HomeViewState extends State<HomeView> {
       body: Padding(
         padding: const EdgeInsets.only(top: 8.0),
         child: GridView.builder(
-          itemCount: 20,
+          controller: _scrollController,
+          itemCount: listProducts.length,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
           ),
-          itemBuilder: (context, index) => GestureDetector(
-            onTap: () => Navigator.pushNamed(context, Routes.product),
-            child: _productWidget(),
-          ),
+          itemBuilder: (context, index) {
+            ProductModel productIndex = listProducts[index];
+            return GestureDetector(
+              onTap: () => Navigator.pushNamed(context, Routes.product),
+              child: _productWidget(
+                productIndex.nameProduct,
+                productIndex.priceProduct,
+                productIndex.inStock,
+              ),
+            );
+          },
         ),
       ),
     );
@@ -147,7 +191,7 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 
-  Widget _productWidget() {
+  Widget _productWidget(String name, String price, bool inStock) {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Card(
