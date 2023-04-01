@@ -50,7 +50,7 @@ class ModalConfirmationBuyProduct {
                 onTap: () => playSnackBar(),
                 child: Container(
                   alignment: Alignment.center,
-                  width: 150,
+                  width: 200,
                   height: 50,
                   decoration: BoxDecoration(
                       color: Colors.green,
