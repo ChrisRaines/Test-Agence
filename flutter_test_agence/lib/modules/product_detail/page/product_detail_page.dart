@@ -51,7 +51,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
         elevation: 5,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -64,68 +64,65 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           fontWeight: FontWeight.w500))
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      children: const [
-                        SizedBox(height: 30),
-                        SizedBox(
-                          width: 190,
-                          child: Text(
-                            "Echo Dot (4ª Geração): Smart Speaker com Alexa | Música, informação e Casa Inteligente - Cor Preta",
-                            style: TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        SizedBox(height: 12),
-                        SizedBox(
-                          width: 190,
-                          child: Text(
-                              "Conheça o Echo Dot (4ª Geração): nosso smart speaker com Alexa de maior sucesso ainda melhor. O novo design de áudio com direcionamento frontal, garante mais graves e um som completo."),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Image.asset(
-                          ImagesConstants.produto,
-                          scale: 5,
-                        ),
-                        const SizedBox(height: 10.0),
-                        Image.asset(
-                          ImagesConstants.stars,
-                          scale: 9,
-                        ),
-                        const SizedBox(height: 10.0),
-                        const Text(
-                          "R\$379,05",
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    children: const [
+                      SizedBox(height: 30),
+                      SizedBox(
+                        width: 190,
+                        child: Text(
+                          "Echo Dot (4ª Geração): Smart Speaker com Alexa | Música, informação e Casa Inteligente - Cor Preta",
                           style: TextStyle(fontWeight: FontWeight.w600),
                         ),
-                        const SizedBox(height: 8),
-                        const Text(
-                          "Em estoque",
-                          style: TextStyle(
-                              color: Colors.green, fontWeight: FontWeight.w500),
+                      ),
+                      SizedBox(height: 12),
+                      SizedBox(
+                        width: 190,
+                        child: Text(
+                            "Conheça o Echo Dot (4ª Geração): nosso smart speaker com Alexa de maior sucesso ainda melhor. O novo design de áudio com direcionamento frontal, garante mais graves e um som completo."),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Image.asset(
+                        ImagesConstants.produto,
+                        scale: 5,
+                      ),
+                      const SizedBox(height: 10.0),
+                      Image.asset(
+                        ImagesConstants.stars,
+                        scale: 9,
+                      ),
+                      const SizedBox(height: 10.0),
+                      const Text(
+                        "R\$379,05",
+                        style: TextStyle(fontWeight: FontWeight.w600),
+                      ),
+                      const SizedBox(height: 8),
+                      const Text(
+                        "Em estoque",
+                        style: TextStyle(
+                            color: Colors.green, fontWeight: FontWeight.w500),
+                      ),
+                      const SizedBox(height: 8),
+                      ElevatedButton(
+                        style: const ButtonStyle(
+                          backgroundColor:
+                              MaterialStatePropertyAll<Color>(Colors.green),
                         ),
-                        const SizedBox(height: 8),
-                        ElevatedButton(
-                          style: const ButtonStyle(
-                            backgroundColor:
-                                MaterialStatePropertyAll<Color>(Colors.green),
-                          ),
-                          onPressed: () {
-                            ModalConfirmationBuyProduct()
-                                .modalBottomSheet(context, playSnackBar);
-                          },
-                          child: const Text("Comprar agora"),
-                        ),
-                      ],
-                    )
-                  ],
-                ),
+                        onPressed: () {
+                          ModalConfirmationBuyProduct()
+                              .modalBottomSheet(context, playSnackBar);
+                        },
+                        child: const Text("Comprar agora"),
+                      ),
+                    ],
+                  )
+                ],
               ),
               Column(
                 children: [
